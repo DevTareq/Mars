@@ -42,7 +42,7 @@
       - Code: Bad Request, 400
       - Body: Error Message
 
-#### 3) Tests
+### Test
 - Unit Test
     - Run `./vendor/bin/phpunit tests/Unit`
 - Functional Test
