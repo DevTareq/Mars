@@ -1,0 +1,8 @@
+
+health-check:
+  path: /time/health-check
+  controller: App\HealthCheck\Infrastructure\HealthCheckController::handle
+
+time:
+  path: /time/mars/{time} #mars could be another variable in case we want to expand to a new planet
+  controller: App\Time\Infrastructure\TimeEndpoint::handle

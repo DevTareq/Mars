@@ -1,0 +1,4 @@
+2020/02/23 23:03:34 [emerg] 1#1: no port in upstream "php-upstream" in /etc/nginx/conf.d/default.conf:14
+2020/02/23 23:04:00 [emerg] 1#1: no port in upstream "php-upstream" in /etc/nginx/conf.d/default.conf:14
+2020/02/23 23:04:32 [emerg] 1#1: no port in upstream "php-upstream" in /etc/nginx/conf.d/default.conf:14
+2020/02/23 23:04:44 [emerg] 1#1: no port in upstream "php-upstream" in /etc/nginx/conf.d/default.conf:14
