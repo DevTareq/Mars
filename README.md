@@ -4,11 +4,10 @@
 
 - Make sure you have Docker and Composer installed
 - Go to the project root directory
+- Run `composer install`
 - Run `docker-compose build`
 - Run `docker-compose up -d`
 - Go to http://localhost:8081 since we are exposing port `8081`
-- Run `composer install`
-
 
 
 ### API
