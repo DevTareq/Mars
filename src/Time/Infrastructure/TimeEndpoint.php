@@ -41,7 +41,7 @@ class TimeEndpoint extends AbstractController
             return new JsonResponse($planetTime);
 
         } catch (\Exception $e) {
-            return new JsonResponse($e->getMessage(), 400);
+            return new JsonResponse(["source" => "API", "errors" => [$e->getMessage()]], 400);
         }
     }
 }

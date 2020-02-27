@@ -75,9 +75,14 @@ class MarsTime implements PlantTimeInterface
 
     /**
      * @return array
+     * @throws \Exception
      */
     public function getTiming(): array
     {
+        if (!$this->isIso($this->getSourceTime())) {
+            throw new \Exception("Wrong Time Format!", 400);
+        }
+
         return [
             "Earth" => [
                 "Milli" => $this->toMilliseconds($this->getSourceTime()) ?? ''

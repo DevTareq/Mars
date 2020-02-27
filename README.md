@@ -15,8 +15,11 @@
 - GET `/time/health-check`
 - Response<br>
     - Code: Ok, 200
-    - Body: "I am alive!"
-
+    - Body:
+    ```
+    {
+        "message": "I am alive!"
+    }
 #### 2) Mars Timing
 - GET `/time/mars/{time}`
 - Request<br>
@@ -39,8 +42,14 @@
              }
   - Fail<br>
       - Code: Bad Request, 400
-      - Body: Error Message
-
+      - Body:
+       ```
+                {
+                     "source": "<Response Source>",
+                     "errors": [
+                        <Error Message>
+                     ]
+                }
 ### Test
 - Unit Test
     - Run `./vendor/bin/phpunit tests/Unit`

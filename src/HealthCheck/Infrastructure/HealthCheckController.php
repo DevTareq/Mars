@@ -3,6 +3,7 @@
 namespace App\HealthCheck\Infrastructure;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -16,10 +17,10 @@ class HealthCheckController extends AbstractController
     /**
      * @param Request $request
      *
-     * @return Response
+     * @return JsonResponse
      */
-    public function handle(Request $request): Response
+    public function handle(Request $request): JsonResponse
     {
-        return new Response('I am alive!');
+        return new JsonResponse(["message" => "I am alive!"]);
     }
 }
